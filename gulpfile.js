@@ -36,7 +36,7 @@ gulp.task('build:sass', function(){
       extensions: ['.scss', '.css']
     })
   }))
-  .pipe(gulp.dest('style.css'));
+  .pipe(gulp.dest('assets/styles/style.css'));
 });
 
 let browserSync  = require( 'browser-sync' );
