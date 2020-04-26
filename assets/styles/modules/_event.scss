@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "_base.scss";
+
+.bl_event{
+  text-align: center;
+
+  &_th{
+    width: 25%;
+    color: $sub-color;
+    background: $txt-color;
+  }
+  &_month{
+    color: $sub-color;
+    background: $txt-color;
+  }
+  &_td{
+    color: $txt-color;
+    background: $accent-color;
+  }
+}

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import "../../node_modules/normalize.css/normalize";
-body{
-  background: red;
-}
+@import "mixin/_layout.scss";
+@import "modules/_header.scss";
+@import "modules/_about.scss";
+@import "modules/_aside.scss";
+@import "modules/_event.scss";

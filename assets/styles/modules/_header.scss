@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "_base.scss";
+
+.bl_header{
+  @include flexSet;
+  background: $accent-color;
+  padding-bottom: 2em;
+
+  @include media(pc){
+    width: 100%;
+  }
+}
+
+.bl_header{
+  &_nav{
+    @include flexSet;
+    width: 90%;
+    padding: 3px;
+    margin: 1em auto 0;
+  }
+
+  &_list{
+    width: 30%;
+  }
+
+  &_link{
+    color: $accent-color;
+    background: $txt-color;
+    text-align: center;
+    padding: .5em 0;
+
+    &:hover{
+      color: $accent-color;
+      background: $main-color;
+    }
+  }
+  &_lede{
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import "_base.scss";
+
+.bl_about{
+
+  &_ttl{
+    font-weight: bold;
+    padding-top: 0;
+  }
+
+  &_inner{
+    @include media(pc){
+      display: flex;
+    }
+  }
+
+  &_txt{
+    @include media(pc){
+      width: 60%;
+      padding-right: 3em;
+    }
+  }
+
+  &_img{
+    @include media(pc){
+      width: 30%;
+    }
+  }
+}
