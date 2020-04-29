@@ -12,6 +12,8 @@
 }
 
 .bl_header{
+  margin-bottom: 2em;
+
   &_nav{
     @include flexSet;
     width: 90%;
@@ -35,6 +37,8 @@
     }
   }
   &_lede{
-    margin-left: auto;
+    width: 90%;
+    text-align: right;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "../config/_size.scss";
+@import "../mixin/_layout.scss";
+
+.bl_list{
+  @include media(pc){
+    @include flexSet();
+    
+    &_ttl{
+      width: 100%;
+    }
+
+    &_txt{
+      width: 100%;
+      margin: 0;
+    }
+
+    &_conts{
+      width: 30%;
+    }
+  }
+}

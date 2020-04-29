@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "../config/_size.scss";
+@import "../mixin/_layout.scss";
+
+.bl_index{
+  width: 100%;
+
+  @include media(pc){
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_img{
+    text-align: right;
+    margin-bottom: 2em;
+
+      @include media(pc){
+        position: relative;
+        margin: 0;
+      }
+  }
+
+  &_left{
+    @include media(pc){
+      width: 60%;
+    }
+  }
+  &_right{
+    @include media(pc){
+      width: 36%;
+    }
+  }
+
+  &_txt{
+    color: $txt-color;
+    padding: .5em;
+
+    @include media(pc){
+      color: $accent-color;
+      background: $txt-color;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: .2em;
+    }
+  }
+}

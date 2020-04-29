@@ -1,7 +1,10 @@
 @charset "UTF-8";
 @import "../../node_modules/normalize.css/normalize";
 @import "mixin/_layout.scss";
+@import "modules/_base.scss";
 @import "modules/_header.scss";
-@import "modules/_about.scss";
 @import "modules/_aside.scss";
+@import "modules/_index.scss";
+@import "modules/_about.scss";
 @import "modules/_event.scss";
+@import "modules/_list.scss";

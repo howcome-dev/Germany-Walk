@@ -11,6 +11,7 @@
   &_inner{
     @include media(pc){
       display: flex;
+      align-items: flex-start;
     }
   }
 
@@ -18,12 +19,16 @@
     @include media(pc){
       width: 60%;
       padding-right: 3em;
+      margin-top: 0;
     }
   }
 
   &_img{
+    width: 100%;
+    margin: 0 auto;
+
     @include media(pc){
-      width: 30%;
+      width: 50%;
     }
   }
 }
