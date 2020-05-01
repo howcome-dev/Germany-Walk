@@ -15,7 +15,7 @@
       <h2 class="ly_wrapper_ttl bl_list_ttl">おすすめWalk</h2>
       <p class="bl_list_txt">ミュンヘンの街の歩き方をご紹介します。</p>
       <article class="bl_list_conts">
-        <p><img src="assets/images/münchen_hbf.jpg" alt="ミュンヘン中央駅"></p>
+        <p><img src="assets/images/munchen_hbf.jpg" alt="ミュンヘン中央駅"></p>
         <h3>ミュンヘン中央駅</h3>
         <p>München Haubt Bahnhof ミュンヘン空港からリムジンバスが出ている。日本で事前にチケットを購入。</p>
       </article>
