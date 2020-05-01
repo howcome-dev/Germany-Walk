@@ -28,7 +28,7 @@
     </section>
   </main>
   <footer>
-    <p>Copyright 2020 Germany Walk All rights reserved.</p>
+    <?php include("assets/inc/footer.php"); ?>
   </footer>
 </body>
 </html>
