@@ -15,21 +15,31 @@
   margin-bottom: 2em;
 
   &_logo{
-    font-size: 2.5rem;
-    letter-spacing: .08em;
-    line-height: 1.3em;
+    width: 90%;
     margin-bottom: 1em;
+
+    @include media(pc){
+      width: 30%;
+    }
   }
 
   &_logoLink{
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Lemon', cursive;
+    font-size: 2.5rem;
+    letter-spacing: .08em;
+    line-height: 1.3em;
     color: $sub-color;
     text-shadow: $txt-color 0px 4px 3px;
     background: linear-gradient($txt-color 33.3%, $main-color 0, $main-color 66.6%, $accent-color 0);
-    padding: 16%;
-    margin-top: -.7em;
+    padding: 17% 10% 16%;
+    margin-top: -.8em;
     transform: rotate(-10deg);
     filter: drop-shadow(-3px 6px 6px $txt-color);
+
+    @include media(pc){
+      font-size: 3.5rem;
+      padding: 20% 10% 20%;
+    }
   }
 
   &_nav{

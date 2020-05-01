@@ -1,19 +1,19 @@
 @import url(/Users/user/Sites/GermanyWalk/node_modules/normalize.css/normalize.css);
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 body {
   font-family: 'Noto Sans JP', sans-serif;
@@ -223,24 +223,38 @@ footer {
 }
 
 .bl_header_logo {
-  font-size: 2.5rem;
-  letter-spacing: .08em;
-  line-height: 1.3em;
+  width: 90%;
   margin-bottom: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  .bl_header_logo {
+    width: 30%;
+  }
+}
+
 .bl_header_logoLink {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Lemon', cursive;
+  font-size: 2.5rem;
+  letter-spacing: .08em;
+  line-height: 1.3em;
   color: #F2F2F2;
   text-shadow: #2F3B4C 0px 4px 3px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(33.3%, #2F3B4C), color-stop(0, #BC000F), color-stop(66.6%, #BC000F), color-stop(0, #FED842));
   background: linear-gradient(#2F3B4C 33.3%, #BC000F 0, #BC000F 66.6%, #FED842 0);
-  padding: 16%;
-  margin-top: -.7em;
+  padding: 17% 10% 16%;
+  margin-top: -.8em;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   -webkit-filter: drop-shadow(-3px 6px 6px #2F3B4C);
           filter: drop-shadow(-3px 6px 6px #2F3B4C);
+}
+
+@media only screen and (min-width: 768px) {
+  .bl_header_logoLink {
+    font-size: 3.5rem;
+    padding: 20% 10% 20%;
+  }
 }
 
 .bl_header_nav {
