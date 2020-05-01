@@ -17,12 +17,12 @@
           <img src="assets/images/eyecatch_auerdult_01.jpg" alt="画像：ドイツの街並み。蚤の市の移動遊園地">
           <span class="bl_index_txt">蚤の市の移動遊園地</span>
         </p>
-        <p class="bl_index_img"><img src="assets/images/eyecatch-stephansdom.jpg" alt="画像：ドイツの街並み。パイプオルガンコンサートが行われるシュテファン大聖堂">
+        <p class="bl_index_img"><img src="assets/images/eyecatch_stephansdom.jpg" alt="画像：ドイツの街並み。パイプオルガンコンサートが行われるシュテファン大聖堂">
           <span class="bl_index_txt">パイプオルガンコンサートが行われるシュテファン大聖堂</span>
         </p>
       </div>
       <p class="bl_index_img bl_index_right">
-        <img src="assets/images/eyecatch-auerdult_02.jpg" alt="画像：ドイツの街並み。蚤の市のお店">
+        <img src="assets/images/eyecatch_auerdult_02.jpg" alt="画像：ドイツの街並み。蚤の市のお店">
         <span class="bl_index_txt">蚤の市のお店</span>
       </p>
     </section>
