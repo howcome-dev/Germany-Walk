@@ -14,6 +14,21 @@
 .bl_header{
   margin-bottom: 2em;
 
+  &_logo{
+    margin-bottom: 1em;
+  }
+
+  &_logoLink{
+    font-family: 'Alfa Slab One', cursive;
+    color: $sub-color;
+    text-shadow: $txt-color 0px 4px 3px;
+    background: linear-gradient($txt-color 33.3%, $main-color 0, $main-color 66.6%, $accent-color 0);
+    padding: 16%;
+    margin-top: -.7em;
+    transform: rotate(-10deg);
+    filter: drop-shadow(-3px 6px 6px $txt-color);
+  }
+
   &_nav{
     @include flexSet;
     width: 90%;

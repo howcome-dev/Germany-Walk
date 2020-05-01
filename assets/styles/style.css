@@ -1,5 +1,22 @@
 @import url(/Users/user/Sites/GermanyWalk/node_modules/normalize.css/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   color: #2F3B4C;
   background: #fefefe;
@@ -91,6 +108,7 @@ footer {
 }
 
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   color: #2F3B4C;
   background: #fefefe;
@@ -204,6 +222,24 @@ footer {
   margin-bottom: 2em;
 }
 
+.bl_header_logo {
+  margin-bottom: 1em;
+}
+
+.bl_header_logoLink {
+  font-family: 'Alfa Slab One', cursive;
+  color: #F2F2F2;
+  text-shadow: #2F3B4C 0px 4px 3px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33.3%, #2F3B4C), color-stop(0, #BC000F), color-stop(66.6%, #BC000F), color-stop(0, #FED842));
+  background: linear-gradient(#2F3B4C 33.3%, #BC000F 0, #BC000F 66.6%, #FED842 0);
+  padding: 16%;
+  margin-top: -.7em;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-filter: drop-shadow(-3px 6px 6px #2F3B4C);
+          filter: drop-shadow(-3px 6px 6px #2F3B4C);
+}
+
 .bl_header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +277,7 @@ footer {
 }
 
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   color: #2F3B4C;
   background: #fefefe;
@@ -373,6 +410,98 @@ footer {
   text-align: center;
 }
 
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  color: #2F3B4C;
+  background: #fefefe;
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+h1 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+}
+
+.ly_wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 4em auto;
+  }
+}
+
+.ly_wrapper_conts {
+  margin-bottom: 5em;
+}
+
+.ly_wrapper_conts:first-child {
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_conts:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_conts {
+    width: 60%;
+    padding-right: 3em;
+  }
+}
+
+.ly_wrapper_ttl {
+  color: #FED842;
+  background: #BC000F;
+  padding: 3%;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_ttl {
+    margin: 0 auto 2em;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
 .bl_index {
   width: 100%;
 }
@@ -434,6 +563,7 @@ footer {
 }
 
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   color: #2F3B4C;
   background: #fefefe;
@@ -560,6 +690,7 @@ footer {
 }
 
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   color: #2F3B4C;
   background: #fefefe;
@@ -668,6 +799,98 @@ footer {
 .bl_event_td {
   color: #2F3B4C;
   background: #FED842;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  color: #2F3B4C;
+  background: #fefefe;
+  line-height: 1.7em;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+h1 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+}
+
+.ly_wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 4em auto;
+  }
+}
+
+.ly_wrapper_conts {
+  margin-bottom: 5em;
+}
+
+.ly_wrapper_conts:first-child {
+  margin-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_conts:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_conts {
+    width: 60%;
+    padding-right: 3em;
+  }
+}
+
+.ly_wrapper_ttl {
+  color: #FED842;
+  background: #BC000F;
+  padding: 3%;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .ly_wrapper_ttl {
+    margin: 0 auto 2em;
+  }
+}
+
+footer {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {

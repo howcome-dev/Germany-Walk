@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import "../config/_size.scss";
 @import "../mixin/_layout.scss";
 
 body{
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
 
   @include media(sp){

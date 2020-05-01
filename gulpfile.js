@@ -46,7 +46,8 @@ gulp.task('bs', function() {
     browserSync({
         server: { // 1
             baseDir: "./",
-            index: "index.html"
+            proxy: "localhost:80/Users/user/Sites/GermanyWalk",
+            index: "index.php"
         }
     });
 });
