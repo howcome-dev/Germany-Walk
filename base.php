@@ -3,17 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
   <title>Germany Walk</title>
 </head>
 <body>
-  <header>
-    <h1><a class="logo" href="index.html">Germany Walk</a></h1>
-    <nav>
-      <li><a href="about.html">ドイツの魅力</a></li>
-      <li><a href="event.html">観光イベント</a></li>
-      <li><a href="list.html">おすすめWalk</a></li>
-    </nav>
+  <header class="bl_header">
+    <?php include("assets/inc/header.php"); ?>
   </header>
   <main class="ly_wrapper">
     <section>
