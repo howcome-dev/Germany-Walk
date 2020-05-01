@@ -223,6 +223,9 @@ footer {
 }
 
 .bl_header_logo {
+  font-size: 2.5rem;
+  letter-spacing: .08em;
+  line-height: 1.3em;
   margin-bottom: 1em;
 }
 
