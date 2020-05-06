@@ -29,14 +29,10 @@ if( !empty($_POST['btn_confirm']) ) {
   $auto_reply_subject = 'Germany Walkの登録ありがとうございます！！！';
 
   //本文を設定
-  $auto_reply_subject = "Germany Walkの登録とメッセージありがとうございます！とっても嬉しいです！\n登録してくれたあなたに、私の旅行日程をお届けします！どうぞお楽しみに！\n\n";
-
+  $auto_reply_text = "Germany Walkの登録とメッセージありがとうございます！とっても嬉しいです！\n登録してくれたあなたに、私の旅行日程をお届けします！どうぞお楽しみに！\n\n";
   $auto_reply_text .= "お問い合わせ日時" . date("Y-m-d H:i") ."\n";
-
   $auto_reply_text .= "氏名:" . $_POST['yourName'] ."\n";
-
   $auto_reply_text .= "メールアドレス:" . $_POST['eMail']. "\n\n";
-  
   $auto_reply_text .= "Germany Walk管理人 R";
 
   //メール送信
@@ -44,13 +40,9 @@ if( !empty($_POST['btn_confirm']) ) {
 
   //自分へ送るメールの件名
   $admin_reply_subject = "Germany Walkへの登録メッセージがありました。";
-
   $admin_reply_text = "下記の内容で登録メッセージがありました。\n\n";
-
   $admin_reply_text .= "お問い合わせ日時:" . date("Y-m-d H:i") ."\n";
-
   $admin_reply_text .= "氏名:" . $_POST['yourName'] . "\n";
-
   $admin_reply_text .= "メールアドレス:" . $_POST['eMail'] . "\n\n";
 
   //自分へメール送信
