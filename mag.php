@@ -1,5 +1,5 @@
 <?php
-var_dump($_POST);
+//var_dump($_POST);
 
 // 変数の初期化
 $page_flag = 0;
@@ -11,6 +11,50 @@ if( !empty($_POST['btn_confirm']) ) {
 } elseif( !empty($_POST['btn_submit']) ) {
 
   $page_flag = 2;
+
+  //変数とタイムゾーンを初期化
+  $header = null;
+  $auto_reply_subject = null;
+  $auto_reply_text = null;
+  $admin_reply_subject = null;
+  $admin_reply_text = null;
+  date_default_timezone_set('Asia/Tokyo');
+
+  //ヘッダー情報を設定
+  $header = "MIME-Version: 1.0\n";
+  $header .= "From: Germany Walk <noreply@howcome.dev>\n";
+  $header .= "Reply-To: Germany Walk <noreply@howcome.dev>\n";
+
+  //件名を設定
+  $auto_reply_subject = 'Germany Walkの登録ありがとうございます！！！';
+
+  //本文を設定
+  $auto_reply_subject = "Germany Walkの登録とメッセージありがとうございます！とっても嬉しいです！\n登録してくれたあなたに、私の旅行日程をお届けします！どうぞお楽しみに！\n\n";
+
+  $auto_reply_text .= "お問い合わせ日時" . date("Y-m-d H:i") ."\n";
+
+  $auto_reply_text .= "氏名:" . $_POST['yourName'] ."\n";
+
+  $auto_reply_text .= "メールアドレス:" . $_POST['eMail']. "\n\n";
+  
+  $auto_reply_text .= "Germany Walk管理人 R";
+
+  //メール送信
+  mb_send_mail( $_POST['eMail'], $auto_reply_subject, $auto_reply_text, $header);
+
+  //自分へ送るメールの件名
+  $admin_reply_subject = "Germany Walkへの登録メッセージがありました。";
+
+  $admin_reply_text = "下記の内容で登録メッセージがありました。\n\n";
+
+  $admin_reply_text .= "お問い合わせ日時:" . date("Y-m-d H:i") ."\n";
+
+  $admin_reply_text .= "氏名:" . $_POST['yourName'] . "\n";
+
+  $admin_reply_text .= "メールアドレス:" . $_POST['eMail'] . "\n\n";
+
+  //自分へメール送信
+  mb_send_mail( 'noreply@howcome.dev', $admin_reply_subject, $admin_reply_text, $header);
 
 } 
 ?>
