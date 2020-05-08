@@ -1,4 +1,6 @@
 let gulp = require('gulp');
+let connect = require('gulp-connect-php');
+let browserSync = require('browser-sync');
 let sass = require('gulp-sass');
 let autoprefixer = require('gulp-autoprefixer');
 let plumber = require('gulp-plumber');
@@ -24,32 +26,20 @@ gulp.task('sass', function(done){
     })
   }))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('././'))
+  .pipe(gulp.dest('assets/styles/style.css'))
   done();
 });
 
-//normalize.css
-gulp.task('build:sass', function(){
-  return gulp.src('assets/styles/_reset.scss')
-  .pipe(sass({
-    importer: packageImporter({
-      extensions: ['.scss', '.css']
-    })
-  }))
-  .pipe(gulp.dest('assets/styles/style.css'));
-});
-
-let browserSync  = require( 'browser-sync' );
-
 // Browser Sync
 gulp.task('bs', function() {
-    browserSync({
-        server: { // 1
-            baseDir: "./",
-            proxy: "localhost:80/Users/user/Sites/GermanyWalk",
-            index: "index.php"
-        }
+  connect.server({
+    port:8001,
+    base:'GermanyWalk'
+  }, function (){
+    browserSync({ //1
+      proxy: "localhost:8001"
     });
+  });
 });
 
 // Reload Browser
@@ -61,6 +51,6 @@ gulp.task( 'bs-reload', function() {
 // Default task
 //
 gulp.task( 'default', [ 'bs', 'sass' ], function() { // 1
-  gulp.watch("base.html", ['bs-reload']); // 2
-  gulp.watch("assets/styles/**/*.scss", [ 'sass', 'bs-reload' ]); // 3
+  gulp.watch("index.php", ['bs-reload']); // 2
+  gulp.watch("assets/styles/style.scss", [ 'sass', 'bs-reload' ]); // 3
 });
