@@ -1113,10 +1113,10 @@ footer {
   text-align: center;
 }
 
-.bl_mag_form_ttl {
+.bl_mag_form_input {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .bl_mag_form_labelTxt {
@@ -1125,7 +1125,7 @@ footer {
 
 .bl_mag_form_txtfield, .bl_mag_form_txtarea {
   display: block;
-  width: 80%;
+  width: 85%;
   background: #F2F2F2;
   border-radius: .5rem;
   padding: 1rem 1.5rem;
@@ -1136,7 +1136,13 @@ footer {
   border: none;
 }
 
-.bl_mag_form_ttl {
+@media only screen and (min-width: 768px) {
+  .bl_mag_form_txtfield, .bl_mag_form_txtarea {
+    width: 90%;
+  }
+}
+
+.bl_mag_form_input {
   margin-top: 1.5rem;
 }
 
@@ -1161,5 +1167,9 @@ footer {
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0.1, 0.3, 1);
   transition: all 0.25s cubic-bezier(0.4, 0.1, 0.3, 1);
   -webkit-tap-highlight-color: transparent;
+}
+
+.bl_mag_form_submit .ly_btn:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

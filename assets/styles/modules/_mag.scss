@@ -54,10 +54,10 @@
 
 .bl_mag{
   &_form{
-    &_ttl{
+    &_input{
       border: none;
       padding: 0;
-      margin: 0; 
+      margin: 0 auto;
     }
 
     &_labelTxt{
@@ -67,7 +67,7 @@
     &_txtfield,
     &_txtarea{
       display: block;
-      width: 80%;
+      width: 85%;
       background: $sub-color;
       border-radius: .5rem;
       padding: 1rem 1.5rem;
@@ -76,9 +76,13 @@
       font-size: .90909rem;
       line-height: 1.375em;
       border: none;
+
+      @include media(pc){
+        width: 90%;
+      }
     }
 
-    &_ttl{
+    &_input{
       margin-top: 1.5rem;
     }
 
