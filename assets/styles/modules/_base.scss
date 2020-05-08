@@ -3,6 +3,7 @@
 
 body{
   font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
   margin: 0;
 
   @include media(sp){
@@ -11,7 +12,6 @@ body{
   }
 
   color: $txt-color;
-  background: $background-color;
   line-height: $base-height;
 }
 
@@ -27,6 +27,10 @@ img{
 
 h1{
   margin: 0;
+}
+
+ol{
+  padding: 0;
 }
 
 li{

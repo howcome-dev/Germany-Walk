@@ -17,9 +17,27 @@
 	}
 }
 
-//flex
+// flex
 @mixin flexSet{
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
+}
+
+// ボタン
+@mixin btn{
+	font-weight: 700;
+	font-size: .90909rem;
+	line-height: 1.65em;
+	position: relative;
+	display: inline-block;
+	min-width: 12rem;
+	padding: 1rem 1.5rem;
+	background: $accent-color;
+	color: $txt-color;
+	border: none;
+	border-radius: 99rem;
+	text-align: center;
+	transition: all .25s cubic-bezier(.4,.1,.3,1);
+	-webkit-tap-highlight-color: transparent;
 }

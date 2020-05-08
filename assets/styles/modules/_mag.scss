@@ -6,6 +6,89 @@
   padding: 0;
 }
 
-input{
-  width: 100%;
+.bl_mag{
+  &_steps{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    &_item{
+      position: relative;
+      text-align: center;
+
+      &:nth-child(n+2){
+        padding-left: 2.7rem;
+
+        &:before{
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 3rem;
+          top: 1.5rem;
+          height: 2px;
+          transform: translateY(-50%);
+          background-color: $background-color;
+        }
+      }
+    }
+
+    &_itemNum{
+      display: block;
+      color: $sub-color;
+      background: $txt-color;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3em;
+      border-radius: 99rem;
+    }
+
+    &_itemLabel{
+      display: block;
+    }
+  }
+
+  &_txt{
+    text-align: center;
+  }
+}
+
+.bl_mag{
+  &_form{
+    &_ttl{
+      border: none;
+      padding: 0;
+      margin: 0; 
+    }
+
+    &_labelTxt{
+      font-weight: 700;
+    }
+
+    &_txtfield,
+    &_txtarea{
+      display: block;
+      width: 80%;
+      background: $sub-color;
+      border-radius: .5rem;
+      padding: 1rem 1.5rem;
+      margin-top: .5rem;
+      font-weight: 400;
+      font-size: .90909rem;
+      line-height: 1.375em;
+      border: none;
+    }
+
+    &_ttl{
+      margin-top: 1.5rem;
+    }
+
+    &_submit{
+      text-align: center;
+      margin-top: 2.5rem;
+
+      .ly_btn{
+        @include btn();
+      }
+    }
+  }
 }
