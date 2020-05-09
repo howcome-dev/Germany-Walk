@@ -91,10 +91,6 @@
     &_submit{
       text-align: center;
       margin-top: 2.5rem;
-
-      .ly_btn{
-        @include btn();
-      }
     }
   }
 }

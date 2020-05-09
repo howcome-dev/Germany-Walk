@@ -80,6 +80,10 @@ dd{
   }
 }
 
+.ly_btn{
+  @include btn();
+}
+
 footer{
   text-align: center;
 }
