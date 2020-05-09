@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+// 入力確認送信
 .bl_mag{
   &_steps{
     display: flex;
@@ -52,6 +53,7 @@
   }
 }
 
+// 入力フォーム
 .bl_mag{
   &_form{
     &_input{
@@ -92,6 +94,36 @@
 
       .ly_btn{
         @include btn();
+      }
+    }
+  }
+}
+
+// 確認ページ
+.bl_mag{
+  &_form{
+    @include media(pc){
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &_labelTxt,
+    &_confirTxt{
+      display: block;
+    }
+
+    &_submit{
+      @include media(pc){
+        margin-top: 2rem;
+      }
+
+      .ly_btn:nth-child(2){
+        margin-top: 1.5rem;
+
+        @include media(pc){
+          margin-top: 0;
+          margin-left: 2rem;
+        }
       }
     }
   }

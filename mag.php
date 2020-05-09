@@ -1,15 +1,13 @@
 <?php
 
 // 変数の初期化
-$page_flag = 0;
-
 if( !empty($_POST['btn_confirm']) ) {
 
 	$page_flag = 1;
 
 } elseif( !empty($_POST['btn_submit']) ) {
 
-  $page_flag = 2;
+	$page_flag = 2;
 
   // 変数とタイムゾーンを初期化
   $header = null;
@@ -30,7 +28,8 @@ if( !empty($_POST['btn_confirm']) ) {
   // 本文を設定
   $auto_reply_text = "Germany Walkの登録とメッセージありがとうございます！とっても嬉しいです！\n登録してくれたあなたに、私の旅行日程をお届けします！どうぞお楽しみに！\n\n";
   $auto_reply_text .= "お問い合わせ日時" . date("Y-m-d H:i") ."\n";
-  $auto_reply_text .= "氏名:" . $_POST['last_name'] . $_POST['first_name'] ."\n";
+  $auto_reply_text .= "姓:" . $_POST['last_name'] ;
+  $auto_reply_text .= "名:" . $_POST['first_name'] ."\n";
   $auto_reply_text .= "メールアドレス:" . $_POST['email']. "\n\n";
   $auto_reply_text .= "Germany Walk管理人 R";
 
@@ -43,7 +42,8 @@ if( !empty($_POST['btn_confirm']) ) {
   // 自分へ送るメールの本文
   $admin_reply_text = "下記の内容で登録メッセージがありました。\n\n";
   $admin_reply_text .= "お問い合わせ日時:" . date("Y-m-d H:i") ."\n";
-  $admin_reply_text .= "氏名:" . $_POST['last_name'] . $_POST['first_name']. "\n";
+  $admin_reply_text .= "姓:" . $_POST['last_name'] ;
+  $admin_reply_text .= "名:" . $_POST['first_name'] ."\n";
   $admin_reply_text .= "メールアドレス:" . $_POST['email'] . "\n\n";
 
   //自分へメール送信
@@ -81,29 +81,32 @@ if( !empty($_POST['btn_confirm']) ) {
           <span class="bl_mag_steps_itemLabel">完了</span>
         </li>
       </ol>
-      <p class="bl_mag_txt">私の旅の予定をお送りします。<br>ぜひ、ご登録ください。</p>
       
       <?php if( $page_flag === 1): ?>
 
       <form class="bl_mag_form" method="post" action="">
-        <fieldset class="bl_mag_form_input">
-          <legend>
-            <span class="bl_mag_form_labelTxt">お名前 Name</span>
-          </legend>
-          <?php echo $_POST['last_name']; ?>
-          <?php echo $_POST['first_name']; ?>
-        </fieldset>
-        <p class="bl_mag_form_input">
-          <span class="bl_mag_form_labelTxt">メールアドレス Mail</span>
-          <?php echo $_POST['email']; ?>
+        <p class="btn_mag_form_confirm">
+          <span class="bl_mag_form_labelTxt">お名前 Name</span>
+          <span class="bl_mag_form_confirmTxt">
+            <?php echo $_POST['last_name']; ?>
+            <?php echo $_POST['first_name']; ?>
+          </span>
         </p>
-        <p class="bl_mag_form_input">
+        <p class="bl_mag_form_confirm">
+          <span class="bl_mag_form_labelTxt">メールアドレス Mail</span>
+          <span class="bl_mag_form_confirmTxt">
+            <?php echo $_POST['email']; ?>
+          </span>
+        </p>
+        <p class="bl_mag_form_confirm">
           <span class="bl_mag_form_labelTxt">メッセージ Message</span>
-          <?php echo $_POST['message']; ?>
+          <span class="bl_mag_form_confirmTxt">
+            <?php echo $_POST['message']; ?>
+          </span>
         </p>
         <p class="bl_mag_form_submit">
-          <button class="ly_btn" name="btn_submit" type="submit">送信</button>
-          <button class="ly_btn" name="btn_back" type="submit">入力画面に戻る</button>
+          <input class="ly_btn" name="btn_back" type="submit" value="入力画面に戻る">
+          <input class="ly_btn" name="btn_submit" type="submit" value="送信">
         </p>
         <p><input type="hidden" name="last_name" value="<?php echo $_POST['last_name']; ?>"></p>
         <p><input type="hidden" name="first_name" value="<?php echo $_POST['first_name']; ?>"></p>
@@ -113,9 +116,11 @@ if( !empty($_POST['btn_confirm']) ) {
 
       <?php elseif( $page_flag === 2 ): ?>
 
-      <p>登録完了です！メッセージありがとうございました。</p>
+      <p class="bl_mag_txt">登録完了です！メッセージありがとうございました。</p>
 
       <?php else: ?>
+
+      <p class="bl_mag_txt">私の旅の予定をお送りします。<br>ぜひ、ご登録ください。</p>
 
       <form class="bl_mag_form" method="post" action="">
         <fieldset class="bl_mag_form_input">
@@ -133,7 +138,7 @@ if( !empty($_POST['btn_confirm']) ) {
           <span class="bl_mag_form_labelTxt">メッセージ Message</span>
           <textarea class="bl_mag_form_txtarea" name="message" rows="8" placeholder="最大文字数1000字まで。熱い想いを語ってください。" value=""></textarea>
         <p class="bl_mag_form_submit">
-          <button class="ly_btn" name="btn_confirm" type="submit">入力内容を確認する</button>
+          <input class="ly_btn" name="btn_confirm" type="submit" value="入力内容を確認する">
         </p>
       </form>
 

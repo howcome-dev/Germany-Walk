@@ -1172,4 +1172,32 @@ footer {
 .bl_mag_form_submit .ly_btn:hover {
   cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+  .bl_mag_form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.bl_mag_form_labelTxt, .bl_mag_form_confirTxt {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .bl_mag_form_submit {
+    margin-top: 2rem;
+  }
+}
+
+.bl_mag_form_submit .ly_btn:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .bl_mag_form_submit .ly_btn:nth-child(2) {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
